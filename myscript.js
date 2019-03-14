@@ -2,7 +2,7 @@ var choice = window.prompt('Pick a color, black, white or gold?')
 
 var futherChoice = function () {
   var numberChoice = window.prompt('How many would you like to buy?')
-  numberChoice = parseInt(numberChoice.trim()) && 1
+  numberChoice = parseInt(numberChoice) && 1
   if (numberChoice >= 1) {
     window.alert('Great! I will order for you.')
   } else {
@@ -46,4 +46,3 @@ if (choice === null || choice === undefined) {
     window.alert('Sorry, only three options -- black, white or gold.')
   }
 }
-// ?Use a truthy or falsy condition in at least one if statement
