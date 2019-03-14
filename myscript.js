@@ -2,8 +2,7 @@ var choice = window.prompt('Pick a color, black, white or gold?')
 
 var futherChoice = function () {
   var numberChoice = window.prompt('How many would you like to buy?')
-  numberChoice = parseInt(numberChoice) && 1
-  if (numberChoice >= 1) {
+  if (parseInt(numberChoice) >= 1) {
     window.alert('Great! I will order for you.')
   } else {
     window.alert('You seem not like it, maybe Samsung?')
